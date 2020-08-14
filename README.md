@@ -1,7 +1,7 @@
 # SummeR / imbrseaR
 Repository with R Scripts related to the IMBRSea working group. 
 
-International Master of Science in Marine Biological Resources (IMBRSea) Introduction to R swirl course.
+International Master of Science in Marine Biological Resources (http://www.imbrsea.eu/) Introduction to R swirl course.
 
 In development by the IMBRSea R Working Group: Ulrike Braeckman, Osman Crespo Neto, Tim Deprez, Olivier Gauthier, Valentin Geslin, Julia Jung, Cóilín Minto, Stanley Nmor
 
