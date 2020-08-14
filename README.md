@@ -12,7 +12,7 @@ To get started copy and paste the following lines into R at the prompt > symbol.
 if("swirl" %in% rownames(installed.packages()) == FALSE) {install.packages("swirl")}
 library(swirl)
 install_course_github("IMBRSea-R-Working-Group", "SummeR")
-### if you get a warning message like 'Directory not empty', run 'uninstall_course("imbrseaR")' and then install course again
+### if you get a warning message like 'Directory not empty', run 'uninstall_course("SummeR")' and then install course again
 ### start swirl
 swirl()
 ```
