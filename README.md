@@ -20,7 +20,7 @@ It will ask
 
 | Would you like to continue with one of these lessons?
 
-1: R Programming E Basic Building Blocks
+1: R Programming E Basic Building Blocks /n
 2: No. Let me start something new.
 choose 2
 
