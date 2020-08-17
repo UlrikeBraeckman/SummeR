@@ -9,6 +9,6 @@
   )
 }
 
-reeffish<- read.csv(file.path(.get_course_path(), "imbrseaR", "Data_exploration", "ReefFish.csv"))
+reeffish<- read.csv(file.path(.get_course_path(), "SummeR", "Data_exploration", "ReefFish.csv"))
                     
 
