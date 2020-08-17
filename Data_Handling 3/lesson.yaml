@@ -1,0 +1,183 @@
+- Class: meta
+  Course: imbrseaR
+  Lesson: Data_Handling_part_3
+  Author: your name goes here
+  Type: Standard
+  Organization: your organization's name goes here
+  Version: 2.4.5
+
+- Class: text
+  Output: In previous two lesson, we learnt to read in data, operate on them, now we will move a notch higher. In this tutorial, you will learn about 'LOGICAL INDEXING' and apply the all the technique on real data. Grab your seat belt!!!
+  
+- Class: text
+  Output: You can index the number using the technique learnt before. But for the next one, I will teach you one new way of indexing which will help you when working with real data. It's called "LOGICAL INDEXING"
+
+- Class: figure
+  Output: ....
+  Figure: change_directory2part3.R
+  
+- Class: text
+  Output: Basically, it means instead of using character indexing or number indexing, we use "logical operator". Wait a minute, what is "logical operator"?
+
+- Class: figure
+  Output: The logical operator you need to know in 'R' is shown on your Plot viewer. Can you see it. 
+  Figure: plot_logical_operator.R
+  FigureType: new
+  
+- Class: text
+  Output: Take a minute to understand the table. It's quite simple...
+  
+- Class: text
+  Output: So with this logical operators, you can select any data that satisfy any "conditions" you want for your dataset. Let first create a simple vector of data.
+  
+- Class: cmd_question
+  Output: create a sequence of number called 'x' which run 'from' 1 'to' 20 with increment ('by') of 1
+  CorrectAnswer: x <- seq(from = 1, to = 20, by = 1)
+  AnswerTests: any_of_exprs('x <- seq(from = 1, to = 20, by = 1)', 'x = seq(from = 1, to = 20, by = 1)', 'x = 1:20')
+  Hint: The answer is in the question.
+  
+- Class: text
+  Output: Say we wanted to select only the numbers that 'equal' to '5' in x. How do we do that? 
+  
+- Class: text
+  Output: You basically write 'x == 5'. This will return 'TRUE' if they satisfy the condition and 'FALSE' otherwise. Let try that!!
+  
+- Class: figure
+  Output: See illustrated concept in the plot viewer.
+  Figure: logical_index_illustrated.R
+  
+- Class: cmd_question
+  Output: Get the value that is "exactly" equal to '5' in the data 'x'
+  CorrectAnswer: x == 5
+  AnswerTests: omnitest(correctExpr = 'x == 5') 
+  Hint: The answer is in the question. 
+  
+- Class: cmd_question
+  Output: Another one, Get the value that is "less than (<)" equal to '5' in the data 'x'
+  CorrectAnswer: x < 5
+  AnswerTests: omnitest(correctExpr = 'x < 5') 
+  Hint: Make sure to check the previous illustration on the different type of logical operators
+  
+- Class: text
+  Output: We could do better. You can save the result from this logical operation and use that to index a data. Doing that, every 'TRUE' from our logical operators is retain in the data WHILE the 'FALSE' are remove. You see the logic!!. Let practice. 
+
+- Class: cmd_question
+  Output: Get the value that is exactly equal '(==)' to '5' in the data 'x' and save it in an object called 'exactly_five'
+  CorrectAnswer: exactly_five <- x == 5
+  AnswerTests: any_of_exprs('exactly_five <- x == 5', 'exactly_five = x == 5')
+  Hint: Make sure you type the correct operators
+  
+- Class: text
+  Output: Now you can use this 'exactly_five' object within the bracket '[]'to get all 'x' values that are exactly five!!!. Let that try that. 
+
+- Class: cmd_question
+  Output: Use the 'exactly_five' object to index value that are exactly equal to '5' in x. Remember to place a parentheses(like this 'x[]')
+  CorrectAnswer: x[exactly_five]
+  AnswerTests: omnitest(correctExpr = 'x[exactly_five]') 
+  Hint: Remember the exactly_five object. Place it inside the square parentheses. 
+  
+- Class: text
+  Output: The expression above can be read as "In x, I want x that is exactly equal to 5". Let try another example.
+  
+- Class: text
+  Output: Say we want to get all numbers that is "less than or equal to 15". First we need to create our logical expression called 'less_than_equal_15'. Which can be coded as 'x <= 15'. Hit the console!!
+  
+- Class: cmd_question
+  Output: Create a logical expression that get all value of x less than or equal ('<=') to '15' and call it 'less_than_equal_15'
+  CorrectAnswer: less_than_equal_20 <- x <= 15
+  AnswerTests: any_of_exprs('less_than_equal_15 <- x <= 15', 'less_than_equal_15 = x <= 15')
+  Hint: The answer is in the question.  
+  
+- Class: text
+  Output: Can you see how the word easily translate to the code. Now, let use that object to index. In words, we say, "In x, I want x that is less than equal to 20"
+  
+- Class: cmd_question
+  Output: In 'x', use the 'less_than_equal_15' object to get value that is "less than or equal" to '15'
+  CorrectAnswer: x[less_than_equal_15]
+  AnswerTests: omnitest(correctExpr = 'x[less_than_equal_15]') 
+  Hint: The answer is in the question.  
+
+- Class: text
+  Output: You can do that same for other logical operator, the idea is you making sure you clearly specify the spoken expression in the most simplest of way. Then the code can easily be written to get the correct output. You need to practice this everyday!!!
+  
+- Class: text
+  Output: So to end this lesson, Let use all you have learnt so far on our mud data set and see if you can practice simple indexing.
+  
+- Class: cmd_question
+  Output: read in the 'mud_env.txt' data with 'read.table()', and assign it to to 'mud_env'. Remember to place the header with 'header = TRUE'
+  CorrectAnswer: mud_env <- read.table("mud_env.txt", header = TRUE)
+  AnswerTests: any_of_exprs('mud_env <- read.table("mud_env.txt", header = TRUE)', 'mud_env = read.table("mud_env.txt", header = TRUE)', 'mud_env = read.table(file = "mud_env.txt", header = TRUE)', 'mud_env <- read.table(file = "mud_env.txt", header = TRUE)') 
+  Hint: The answer is in the question and ideas from previous lesson. 
+
+- Class: text
+  Output: Let survey that data easily, you can view the data using 'View(mud_env)' in the console. It produce a 'data.frame' object in a pop-up.
+  
+- Class: cmd_question
+  Output: Type 'View(mud_env)' to verify we created to view the mud data.
+  CorrectAnswer: View(mud_env)
+  AnswerTests: omnitest(correctExpr = 'View(mud_env)') 
+  Hint: The answer is in the question.
+  
+- Class: text
+  Output: Let get the dimension of the data. This dimension is basically shows the shape of the data is - How many rows and columns we have in our data. You can do that using 'dim(mud_env)'. 
+
+- Class: cmd_question
+  Output: Get the dimension of the data using 'dim(mud_env)'
+  CorrectAnswer: dim(mud_env)
+  AnswerTests: omnitest(correctExpr = 'dim(mud_env)') 
+  Hint: The answer is in the question.
+
+- Class: text
+  Output: This basically says we have '15' ROWS and '7' COLUMNS. In R, we write it as 'mud_env[15, 7]'. You see the comma (','). That is really important in order to distinguish rows and column. So what can we do with this? 
+
+- Class: text
+  Output: Good question. You can take advantage of rows to "SUBSET" part of the data that you want using any of the technique we just learned. How do it I do that? 
+ 
+- Class: text
+  Output: Let do one more. Say we want 'chla' that is less than or equal to '25' from our mud dataset. 
+  
+- Class: text
+  Output: This is similar to saying "In mud_env dataset, I want chla values that are less than or equal (<=) to 25". Translating to code is 'mud_env[mud_env$chla <= 25,  ]'. Notice the comma (',') and the fact we use 'mud_env$chla'.
+  
+- Class: text
+  Output: The mud_env$chla is important because we want to make CLEAR REFERENCE to the particular variable/column 'chla' in 'mud_env'. The dollar sign is just like saying the word 'in'. So in our case, "chla IN mud_env". Take a moment to think through this. 
+  
+- Class: cmd_question
+  Output: Type 'mud_env$chla <= 25' in the console to give vector of values 'less than or equal to 25' in 'mud_env' dataset. Store the result in 'chla_less_than_equal_25'
+  CorrectAnswer: chla_less_than_equal_25 <- mud_env$chla <= 25
+  AnswerTests: any_of_exprs('chla_less_than_equal_25 <- mud_env$chla <= 25', 'chla_less_than_equal_25 = mud_env$chla <= 25')
+  Hint: Make sure you type the correct expresion and save to the correct object - 'chla_less_than_equal_25'
+
+- Class: figure
+  Output: Now look at illustration on how R handle the condition and subsetting. Take a minute to understand it!
+  Figure: complex_subsetting.R
+  
+- Class: cmd_question
+  Output: Use the 'chla_less_than_equal_25' object to subset ROWS in 'mud_env' dataset. 
+  CorrectAnswer: mud_env[chla_less_than_equal_25, ]
+  AnswerTests: omnitest(correctExpr = 'mud_env[chla_less_than_equal_25, ]') 
+  Hint: This operation is on the row, so make sure to put a comma (",") afterward.
+  
+- Class: text
+  Output: Magic!!!. Let index from the location column site ("mud_env$location") that belongs to "mats". 
+
+- Class: text
+  Output: Using our knowledge of logical indexing, this similar to saying "In mud_env dataset, I want location that belong exactly (==) to mats". 
+
+- Class: text  
+  Output: Translating to code is 'mud_env[mud_env$location == "mats",   ]'. Notice the comma (','). Let hit the console!
+  
+- Class: cmd_question
+  Output: Get the all 'locations' in mud_env that is '"mats"'. Store the output is 'mats' 
+  CorrectAnswer: mats = mud_env$location == "mats"
+  AnswerTests: any_of_exprs('mats = mud_env$location == "mats"', 'mats <- mud_env$location == "mats"') 
+  Hint: Make sure you index the correct expression. Remember to put use dollar sign ($)
+  
+- Class: cmd_question
+  Output: Use the 'mats' object to subset ROWS in 'mud_env' dataset to get all mats location.   
+  CorrectAnswer: mud_env[mats, ]
+  AnswerTests: omnitest(correctExpr = 'mud_env[mats, ]') 
+  Hint: This operation is on the row, so make sure to put a comma (",") afterward. 
+
+- Class: text
+  Output: Beautiful. Now that you are armed with this technique you can do some serious data exploration using R. Thanks for your patience. Happy hacking!!!
