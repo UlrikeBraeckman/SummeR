@@ -108,5 +108,9 @@
   AnswerTests: any_of_exprs('fish_data <- read.csv("Fish_landings.csv", header = TRUE)', 'fish_data = read.csv("Fish_landings.csv", header = TRUE)', 'fish_data = read.csv(file = "Fish_landings.csv", header = TRUE)', 'fish_data <- read.csv(file = "Fish_landings.csv", header = TRUE)') 
   Hint: Remember to put header = TRUE as an extra argument. 
   
+- Class: figure
+  Output: ....
+  Figure: cleanup.R 
+  
 - Class: text
   Output: Great that all for now. Bye and see you in the next lesson. 
