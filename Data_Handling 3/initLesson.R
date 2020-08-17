@@ -8,4 +8,4 @@
   )
 }
 
-setwd(.get_course_path())
+setwd(file.path(find.package("swirl"),"Courses", "SummeR"))
