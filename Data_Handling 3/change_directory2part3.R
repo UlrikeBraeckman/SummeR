@@ -4,8 +4,8 @@
 
 # if the current directory is outside Data_Handling_part_3 folder, 
 # set directory to the parent.
-curdir <- basename(getwd())
-if(curdir != "Data_Handling 3") {
-  setwd("SummeR/Data_Handling 3/")
-}
-rm(curdir)
+# curdir <- basename(getwd())
+# if(curdir != "Data_Handling 3") {
+#   setwd("SummeR/Data_Handling 3/")
+# }
+# rm(curdir)

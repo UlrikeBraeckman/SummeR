@@ -36,7 +36,7 @@
 - Class: cmd_question
   Output: There is a directory called 'Data_Handling 1' in the current directory you are in. Set this directory to be your new current directory
   CorrectAnswer: setwd("Data_Handling")
-  AnswerTests: any_of_exprs('setwd("Data_Handling")', 'setwd("Data_Handling/")')
+  AnswerTests: any_of_exprs('setwd("Data_Handling 1")', 'setwd("Data_Handling 1/")')
   Hint: Look at the command given in the previous line.
 
 - Class: text
