@@ -8,3 +8,5 @@
            error = function(c) {file.path(find.package("swirl"),"Courses")}
   )
 }
+
+setwd(.get_course_path())
