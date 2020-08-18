@@ -5,7 +5,7 @@
   Type: Standard
   Organization: your organization's name goes here
   Version: 2.4.5
-
+  
 - Class: text
   Output: Welcome to the Data Handling lesson!  This will be split into three part to give you are easy ride to the wonderful world of R!
 
@@ -17,10 +17,6 @@
 
 - Class: text
   Output: To see your current working directory, use getwd().
-  
-- Class: figure
-  Output: ....
-  Figure: change_directory2parent.R 
 
 - Class: cmd_question
   Output: Verify in which working directory your work is located now
@@ -33,10 +29,13 @@
   Figure: Directory_tree.R
   FigureType: new
   
+- Class: text
+  Output: Similarly, you can set a working directory to your preferred location using 'setwd(<Your preferred location>)'. In between the bracket, you place the folder path. In windows you do some like "C:/Ocean/IMBRSea/Rcourse" in macs OS and Linux you can use "~/Ocean/IMBRSea/Rcourse" assuming Rcourse is a real folder in your machine. Okay.
+  
 - Class: cmd_question
-  Output: There is a directory called 'Data_Handling 1' in the current directory you are in. Set this directory to be your new current directory
-  CorrectAnswer: setwd("Data_Handling")
-  AnswerTests: any_of_exprs('setwd("Data_Handling 1")', 'setwd("Data_Handling 1/")')
+  Output: There is a directory called '2.1-Data_Handling' in the current directory you are in. Set this directory to be your new current directory
+  CorrectAnswer: setwd("2.1-Data_Handling")
+  AnswerTests: any_of_exprs('setwd("2.1-Data_Handling")', 'setwd("2.1-Data_Handling/")')
   Hint: Look at the command given in the previous line.
 
 - Class: text
