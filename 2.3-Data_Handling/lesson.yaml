@@ -11,10 +11,6 @@
   
 - Class: text
   Output: You can index the number using the technique learnt before. But for the next one, I will teach you one new way of indexing which will help you when working with real data. It's called "LOGICAL INDEXING"
-
-- Class: figure
-  Output: ....
-  Figure: change_directory2part3.R
   
 - Class: text
   Output: Basically, it means instead of using character indexing or number indexing, we use "logical operator". Wait a minute, what is "logical operator"?
@@ -53,7 +49,7 @@
   Hint: The answer is in the question. 
   
 - Class: cmd_question
-  Output: Another one, Get the value that is "less than (<)" equal to '5' in the data 'x'
+  Output: Another one, Get the value that is "less than (<)" to '5' in the data 'x'
   CorrectAnswer: x < 5
   AnswerTests: omnitest(correctExpr = 'x < 5') 
   Hint: Make sure to check the previous illustration on the different type of logical operators
@@ -84,12 +80,12 @@
   
 - Class: cmd_question
   Output: Create a logical expression that get all value of x less than or equal ('<=') to '15' and call it 'less_than_equal_15'
-  CorrectAnswer: less_than_equal_20 <- x <= 15
+  CorrectAnswer: less_than_equal_15 <- x <= 15
   AnswerTests: any_of_exprs('less_than_equal_15 <- x <= 15', 'less_than_equal_15 = x <= 15')
   Hint: The answer is in the question.  
   
 - Class: text
-  Output: Can you see how the word easily translate to the code. Now, let use that object to index. In words, we say, "In x, I want x that is less than equal to 20"
+  Output: Can you see how the word easily translate to the code. Now, let use that object to index. In words, we say, "In x, I want x that is less than equal to 15"
   
 - Class: cmd_question
   Output: In 'x', use the 'less_than_equal_15' object to get value that is "less than or equal" to '15'
@@ -177,7 +173,11 @@
   Output: Use the 'mats' object to subset ROWS in 'mud_env' dataset to get all mats location.   
   CorrectAnswer: mud_env[mats, ]
   AnswerTests: omnitest(correctExpr = 'mud_env[mats, ]') 
-  Hint: This operation is on the row, so make sure to put a comma (",") afterward. 
-
+  Hint: This operation is on the row, so make sure to put a comma (",") afterward.
+  
+- Class: figure
+  Output: ....
+  Figure: cleanup.R 
+  
 - Class: text
   Output: Beautiful. Now that you are armed with this technique you can do some serious data exploration using R. Thanks for your patience. Happy hacking!!!
