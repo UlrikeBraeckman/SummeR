@@ -3,5 +3,5 @@
 .RData
 .Ruserdata
 *.md
-IMBRSeaR.txt
-.Rproj
+IMBRSeaR
+SummeR.Rproj
