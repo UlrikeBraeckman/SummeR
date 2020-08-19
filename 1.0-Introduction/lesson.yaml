@@ -7,7 +7,7 @@
   Version: 0.0.0.9000
   
 - Class: text
-  Output: Welcome to this short and interactive R Introduction course for IMBRSea students. Anytime you see ... hit enter. When you see a ">" (called a prompt) you are expected to type in an answer either in the form of a number or of some R code followed by enter.
+  Output: Welcome to this short and interactive R Introduction course for IMBRSea students. Anytime you see "..." hit enter. When you see a ">" (called a prompt) you are expected to type in an answer either in the form of a number or of some R code followed by enter.
   
 - Class: text
   Output: This first lesson teaches the basic and general features of R to help you understand how this programming language works. 
@@ -25,7 +25,7 @@
   Hint: 7+1...
 
 - Class: text
-  Output: Now, let's think of R as a calculator that you can use to get the result of basic  calculations ...  
+  Output: Now, let's think of R as a calculator that you can use to get the result of basic calculations ...  
   
 - Class: exact_question
   Output: For example, type 10 + 7 and press enter.
@@ -61,7 +61,7 @@
   Output:  As you can see, R did not print the output in the console. Remember, we only asked R to create the object "eggs" from that command. The result is not displayed "eggs" now exists in memory. NB - R will also understand if you use the equal symbol (=) to assign values to an object but it is better to stick with the assignment operator.
   
 - Class: cmd_question
-  Output: Now that we have this object, let's ask R to print the value. Please type eggs
+  Output: Now that we have this object, let's ask R to print the value. Please type eggs.
   CorrectAnswer: eggs
   AnswerTests: omnitest(correctExpr='eggs')
   Hint: Type "eggs"
@@ -82,10 +82,10 @@
   Hint: Type "hatch"
 
 - Class: text
-  Output: Now you the very basics of R: how to carry out simple calculations and how to assign your result to an object.
+  Output: Now you know the very basics of R: how to carry out simple calculations and how to assign your result to an object.
   
  - Class: text
-  Output: If you want to check which objects are now stored in memory you can use the "ls()" function. This will output the "List of Objects" currently in memory, or more specifically in what is called your "Global Environment" 
+  Output: If you want to check which objects are now stored in memory you can use the "ls()" function. This will output the "List of Objects" currently in memory, or more specifically in what is called your "Global Environment". 
   
 - Class: cmd_question
   Output: Type ls() to check your current objects.  
@@ -124,7 +124,7 @@
   Output: This new object is of class character. Remember, we must always place the text input in between quotes "" to indicate it is a character value. 
   
 - Class: text
-  Output: his first lesson is a very basic introduction to the R environment that tries to keep things as simple as possible. Feel free to play around with the different operators and functions presented here and any values and calculations that come in mind. Use R daily and practice, you'll improve quickly !!
+  Output: This first lesson is a very basic introduction to the R environment that tries to keep things as simple as possible. Feel free to play around with the different operators and functions presented here and any values and calculations that come in mind. Use R daily and practice, you'll improve quickly !!
   
 - Class: video
   Output: Would you like to explore more advanced IMBRSea R material now?
