@@ -1,10 +1,10 @@
 - Class: meta
-  Course: imbrseaR - R for Marine students
+  Course: imbrseaR
   Lesson: Introduction
   Author: Osman Crespo, Cóilín Minto
   Type: Standard
   Organization: IMBRSea
-  Version: 0.0.0.9000
+  Version: 2.4.5
   
 - Class: text
   Output: Welcome to this short and interactive R Introduction course for IMBRSea students. Anytime you see "..." hit enter. When you see a ">" (called a prompt) you are expected to type in an answer either in the form of a number or of some R code followed by enter.
@@ -46,7 +46,7 @@
   Hint: Type "*" between values
 
 - Class: text
-  Output: Using R this way only displays the results in the console. But, what if you want to use this result in further calculations? For this you need to ask R to save the result in memory: R will assign the result to an named object ...  
+  Output: Using R this way only displays the results in the console. But, what if you want to use this result in further calculations? For this you need to ask R to save the result in "memory:" R will assign the result to an named object ...  
   
 - Class: text
   Output: So instead of repeating the calculation every time we want the result, we can create an object called "eggs" and assign the calculation result to it. To assign a value to an object in R we use the "assignement operator" (<-).
@@ -82,9 +82,9 @@
   Hint: Type "hatch"
 
 - Class: text
-  Output: Now you know the very basics of R: how to carry out simple calculations and how to assign your result to an object.
+  Output: Now you know the very basics of R, how to carry out simple calculations and how to assign your result to an object.
   
- - Class: text
+- Class: text
   Output: If you want to check which objects are now stored in memory you can use the "ls()" function. This will output the "List of Objects" currently in memory, or more specifically in what is called your "Global Environment". 
   
 - Class: cmd_question
